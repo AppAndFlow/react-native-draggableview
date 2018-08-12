@@ -1,5 +1,5 @@
 {
-  "name": "react-native-draggableView",
+  "name": "react-native-draggableview",
   "version": "0.0.1",
   "description": "A draggableView for React Native",
   "author": "Vincent de Lafontaine",
@@ -9,7 +9,7 @@
     "prettier": "prettier --write './src/**/*'",
     "tsc": "tsc"
   },
-  "main": "./src/DraggableView.js",
+  "main": "./src/App.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/AppAndFlow/react-native-draggableView"
