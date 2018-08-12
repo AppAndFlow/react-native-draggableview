@@ -53,19 +53,17 @@ const styles = StyleSheet.create({
 | `style`               | `ViewStyle` | Styles of DraggableView.                                                                                                 |
 | `backgroundComponent` | `Component` | The component to render behind the DraggableView.                                                                        |
 | `offset`              | `number`    | If you want to give to DraggableView an offset once it's fully dragged, this offset will be based on the drag direction. |
-| `direction`           | `string`    | Can be either "up" or "down". This determines the drag direction. Default is "down"                                      |
+| `direction`           | `string`    | Can be either "up" or "down". This determines the drag direction. Default is "down".                                     |
 | `threshold`           | `number`    | The minimum drag distance required to trigger the drag animation.                                                        |
 
 ### Methods WIP, might change.
 
 Use `ref` to access these methods.
 
-| **Method** | **Parameter** | **Description** |
-| ---------- | ------------- | --------------- |
-
-
-| `moveToNormal` | `void` | Moves DraggableView to it's default position | |`moveToBottom`| `void` | Moves DraggableView to it's bottom position |
-| `moveToTop` | `void` | Moves DraggableView to it's top position |
+| **Method**     | **Parameter** | **Description**                              |
+| -------------- | ------------- | -------------------------------------------- |
+| `moveToNormal` | `void`        | Moves DraggableView to it's default position |  | `moveToBottom` | `void` | Moves DraggableView to it's bottom position |
+| `moveToTop`    | `void`        | Moves DraggableView to it's top position     |
 
 ## License
 
