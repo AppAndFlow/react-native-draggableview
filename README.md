@@ -1,4 +1,4 @@
-# react-native-draggableView
+# react-native-draggableview
 
 ![Alt Text](https://cdn.discordapp.com/attachments/172177937594843136/478293517924433920/ex2.gif)
 
@@ -11,11 +11,11 @@ Installation can be done through `npm` or `yarn`:
 - This lib uses [react-native-gesture-handler](https://github.com/kmagiera/react-native-gesture-handler). If you are using [Expo](https://expo.io/) it is included by default, otherwise you will need to install it.
 
 ```shell
-npm i react-native-draggableView --save
+npm i react-native-draggableview --save
 ```
 
 ```shell
-yarn add react-native-draggableView
+yarn add react-native-draggableview
 ```
 
 ## Basic Usage
@@ -23,7 +23,7 @@ yarn add react-native-draggableView
 ```js
 import * as React from 'react';
 import { StyleSheet, View } from 'react-native';
-import DraggaleView from 'react-native-draggableView';
+import DraggaleView from 'react-native-draggableview';
 
 export default class App extends React.Component {
   render() {
@@ -80,7 +80,7 @@ Use `ref` to access these methods.
 ```js
 import * as React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import DraggaleView from 'react-native-draggableView';
+import DraggaleView from 'react-native-draggableview';
 
 export default class App extends React.Component {
   render() {
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
 import * as React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 
-import DraggaleView from 'react-native-draggableView';
+import DraggaleView from 'react-native-draggableview';
 
 export default class App extends React.Component {
   render() {
