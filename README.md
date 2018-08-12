@@ -71,7 +71,9 @@ Use `ref` to access these methods.
 | `moveToBottom` | `void`        | Moves DraggableView to it's bottom position  |
 | `moveToTop`    | `void`        | Moves DraggableView to it's top position     |
 
-## Exemples
+## Examples
+
+# 1
 
 ![Alt Text](https://cdn.discordapp.com/attachments/172177937594843136/478293517924433920/ex2.gif)
 
@@ -113,6 +115,51 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 15,
     justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
+});
+```
+
+# 2
+
+![Alt Text](https://cdn.discordapp.com/attachments/172177937594843136/478295647070715904/ex3.gif)
+
+```js
+import * as React from 'react';
+import { registerRootComponent } from 'expo';
+import { StyleSheet, View, Dimensions, Text } from 'react-native';
+
+import DraggaleView from './DraggableView';
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <DraggaleView
+        style={styles.container}
+        backgroundComponent={<View style={styles.view} />}
+        offset={40}
+        threshold={300}
+      >
+        <View style={styles.innerView}>
+          <Text>Drag me down!!</Text>
+        </View>
+      </DraggaleView>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'white',
+    flex: 1,
+  },
+  view: {
+    flex: 1,
+    backgroundColor: 'red',
+  },
+  innerView: {
+    flex: 1,
+    padding: 20,
     alignItems: 'center',
   },
 });
