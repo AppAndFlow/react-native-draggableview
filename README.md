@@ -73,7 +73,7 @@ Use `ref` to access these methods.
 
 ## Examples
 
-# 1
+### .1
 
 ![Alt Text](https://cdn.discordapp.com/attachments/172177937594843136/478293517924433920/ex2.gif)
 
@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
 });
 ```
 
-# 2
+### .2
 
 ![Alt Text](https://cdn.discordapp.com/attachments/172177937594843136/478295647070715904/ex3.gif)
 
