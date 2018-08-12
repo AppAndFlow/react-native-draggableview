@@ -10,9 +10,6 @@ export default class App extends React.Component {
       <DraggaleView
         style={styles.container}
         backgroundComponent={<View style={styles.view} />}
-        direction="down"
-        offset={70}
-        threshold={300}
       />
     );
   }
@@ -21,8 +18,7 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
-    marginTop: 35,
-    height: Dimensions.get('window').height - 35,
+    flex: 1,
   },
   view: {
     flex: 1,

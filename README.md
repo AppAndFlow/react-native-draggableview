@@ -14,14 +14,12 @@ npm i react-native-draggableView --save
 yarn add react-native-draggableView
 ```
 
-## Usage
+## Basic Usage
 
 ```js
 import * as React from 'react';
-import { registerRootComponent } from 'expo';
-import { StyleSheet, View, Dimensions } from 'react-native';
-
-import DraggaleView from './DraggableView';
+import { StyleSheet, View } from 'react-native';
+import DraggaleView from 'react-native-draggableView';
 
 export default class App extends React.Component {
   render() {
@@ -29,9 +27,6 @@ export default class App extends React.Component {
       <DraggaleView
         style={styles.container}
         backgroundComponent={<View style={styles.view} />}
-        direction="down"
-        offset={70}
-        threshold={300}
       />
     );
   }
@@ -40,8 +35,7 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
-    marginTop: 35,
-    height: Dimensions.get('window').height - 35,
+    flex: 1,
   },
   view: {
     flex: 1,
