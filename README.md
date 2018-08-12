@@ -80,8 +80,7 @@ Use `ref` to access these methods.
 ```js
 import * as React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-
-import DraggaleView from './DraggableView';
+import DraggaleView from 'react-native-draggableView';
 
 export default class App extends React.Component {
   render() {
@@ -126,10 +125,9 @@ const styles = StyleSheet.create({
 
 ```js
 import * as React from 'react';
-import { registerRootComponent } from 'expo';
-import { StyleSheet, View, Dimensions, Text } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 
-import DraggaleView from './DraggableView';
+import DraggaleView from 'react-native-draggableView';
 
 export default class App extends React.Component {
   render() {
