@@ -48,30 +48,24 @@ const styles = StyleSheet.create({
 
 ### Props
 
-All the `ScrollView`/`ListView`/`FlatList` props will be passed.
+| **Prop**              | **Type**    | **Description**                                                                                                          |
+| --------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `style`               | `ViewStyle` | Styles of DraggableView.                                                                                                 |
+| `backgroundComponent` | `Component` | The component to render behind the DraggableView.                                                                        |
+| `offset`              | `number`    | If you want to give to DraggableView an offset once it's fully dragged, this offset will be based on the drag direction. |
+| `direction`           | `string`    | Can be either "up" or "down". This determines the drag direction. Default is "down"                                      |
+| `threshold`           | `number`    | The minimum drag distance required to trigger the drag animation.                                                        |
 
-| **Prop**                    | **Type**                         | **Description**                                                                                |
-| --------------------------- | -------------------------------- | ---------------------------------------------------------------------------------------------- |
-| `innerRef`                  | `Function`                       | Catch the reference of the component.                                                          |
-| `viewIsInsideTabBar`        | `boolean`                        | Adds an extra offset that represents the `TabBarIOS` height.                                   |
-| `resetScrollToCoords`       | `Object: {x: number, y: number}` | Coordinates that will be used to reset the scroll when the keyboard hides.                     |
-| `enableAutomaticScroll`     | `boolean`                        | When focus in `TextInput` will scroll the position, default is enabled.                        |
-| `extraHeight`               | `number`                         | Adds an extra offset when focusing the `TextInput`s.                                           |
-| `extraScrollHeight`         | `number`                         | Adds an extra offset to the keyboard. Useful if you want to stick elements above the keyboard. |
-| `enableResetScrollToCoords` | `boolean`                        | Lets the user enable or disable automatic resetScrollToCoords.                                 |
-| `keyboardOpeningTime`       | `number`                         | Sets the delay time before scrolling to new position, default is 250                           |
-| `enableOnAndroid`           | `boolean`                        | Enable Android Support                                                                         |
+### Methods WIP, might change.
 
-### Methods
+Use `ref` to access these methods.
 
-Use `innerRef` to get the component reference and use `this.scrollRef.props` to access these methods.
+| **Method** | **Parameter** | **Description** |
+| ---------- | ------------- | --------------- |
 
-| **Method**           | **Parameter**                                                                                                                                           | **Description**                                                |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| `getScrollResponder` | `void`                                                                                                                                                  | Get `ScrollResponder`                                          |
-| `scrollToPosition`   | `x: number, y: number, animated: bool = true`                                                                                                           | Scroll to specific position with or without animation.         |
-| `scrollToEnd`        | `animated?: bool = true`                                                                                                                                | Scroll to end with or without animation.                       |
-| `scrollIntoView`     | `element: React.Element<*>, options: { getScrollPosition: ?(parentLayout, childLayout, contentOffset) => { x: number, y: number, animated: boolean } }` | Scrolls an element inside a KeyboardAwareScrollView into view. |
+
+| `moveToNormal` | `void | Moves DraggableView to it's default position | |`moveToBottom`|`void | Moves DraggableView to it's bottom position |
+| `moveToTop` | `void | Moves DraggableView to it's top position |
 
 ## License
 
