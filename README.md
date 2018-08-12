@@ -1,5 +1,9 @@
 # react-native-draggableView
 
+![Alt Text](https://cdn.discordapp.com/attachments/172177937594843136/478293517924433920/ex2.gif)
+
+![Alt Text](https://cdn.discordapp.com/attachments/172177937594843136/478293504930611200/ex1.gif)
+
 ## Installation
 
 Installation can be done through `npm` or `yarn`:
@@ -51,6 +55,7 @@ const styles = StyleSheet.create({
 | **Prop**              | **Type**    | **Description**                                                                                                                     |
 | --------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | `style`               | `ViewStyle` | Styles of DraggableView.                                                                                                            |
+| `children`            | `Component` | The component to render on the DraggableView.                                                                                       |
 | `backgroundComponent` | `Component` | The component to render behind the DraggableView.                                                                                   |
 | `offset`              | `number`    | If you want to give to DraggableView an offset once it's fully dragged. This offset will be positioned based on the drag direction. |
 | `direction`           | `string`    | Can be either "up" or "down". This determines the drag direction. Default is "down".                                                |
@@ -65,6 +70,53 @@ Use `ref` to access these methods.
 | `moveToNormal` | `void`        | Moves DraggableView to it's default position |
 | `moveToBottom` | `void`        | Moves DraggableView to it's bottom position  |
 | `moveToTop`    | `void`        | Moves DraggableView to it's top position     |
+
+## Exemples
+
+![Alt Text](https://cdn.discordapp.com/attachments/172177937594843136/478293517924433920/ex2.gif)
+
+```js
+import * as React from 'react';
+import { StyleSheet, View, Text } from 'react-native';
+
+import DraggaleView from './DraggableView';
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <DraggaleView
+        style={styles.container}
+        backgroundComponent={<View style={styles.view} />}
+        offset={85}
+        threshold={300}
+        direction="up"
+      >
+        <View style={styles.innerView}>
+          <Text>Drag me up!!</Text>
+        </View>
+      </DraggaleView>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'white',
+    flex: 1,
+    marginBottom: 35,
+  },
+  view: {
+    flex: 1,
+    backgroundColor: 'red',
+  },
+  innerView: {
+    flex: 1,
+    padding: 15,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
+});
+```
 
 ## License
 
