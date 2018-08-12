@@ -20,7 +20,6 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    // flex: 1,
     backgroundColor: 'white',
     marginTop: 35,
     height: Dimensions.get('window').height - 35,

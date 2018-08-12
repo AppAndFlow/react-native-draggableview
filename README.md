@@ -16,24 +16,38 @@ yarn add react-native-draggableView
 
 ## Usage
 
-You can use the `KeyboardAwareScrollView`, the `KeyboardAwareListView`, `KeyboardAwareSectionList` or the `KeyboardAwareFlatList`
-components. They accept `ScrollView`, `ListView`, `SectionList` and `FlatList` default props respectively and
-implement a custom high order componente called `KeyboardAwareHOC` to handle keyboard appearance.
-The high order component is also available if you want to use it in any other component.
-
-Import `react-native-keyboard-aware-scroll-view` and wrap your content inside
-it:
-
 ```js
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
-```
+import * as React from 'react';
+import { registerRootComponent } from 'expo';
+import { StyleSheet, View, Dimensions } from 'react-native';
 
-```jsx
-<KeyboardAwareScrollView>
-  <View>
-    <TextInput />
-  </View>
-</KeyboardAwareScrollView>
+import DraggaleView from './DraggableView';
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <DraggaleView
+        style={styles.container}
+        backgroundComponent={<View style={styles.view} />}
+        direction="down"
+        offset={70}
+        threshold={300}
+      />
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'white',
+    marginTop: 35,
+    height: Dimensions.get('window').height - 35,
+  },
+  view: {
+    flex: 1,
+    backgroundColor: 'red',
+  },
+});
 ```
 
 ## API
