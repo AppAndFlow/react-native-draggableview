@@ -1,0 +1,54 @@
+{
+  "name": "react-native-draggableView",
+  "version": "0.0.1",
+  "description": "A draggableView for React Native",
+  "author": "Vincent de Lafontaine",
+  "private": false,
+  "scripts": {
+    "lint": "tslint --config tslint.json --project tsconfig.json",
+    "prettier": "prettier --write './src/**/*'",
+    "tsc": "tsc"
+  },
+  "main": "./src/DraggableView.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AppAndFlow/react-native-draggableView"
+  },
+  "keywords": [
+    "react-native",
+    "appandflow",
+    "react-native draggableView",
+    "draggableView",
+    "draggable View"
+  ],
+  "license": "MIT",
+  "files": [
+    "/src",
+    "index.js"
+  ],
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-gesture-handler": "*",
+    "@appandflow/touchable": "2.0.0"
+  },
+  "dependencies": {
+    "@appandflow/touchable": "2.0.0",
+    "expo": "^27.0.0",
+    "react": "16.3.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-27.0.0.tar.gz"
+  },
+  "devDependencies": {
+    "expo": "^27.0.0",
+    "react": "16.3.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-27.0.0.tar.gz",
+    "@types/expo": "^27.0.6",
+    "@types/react": "^16.3.17",
+    "@types/react-native": "^0.55.19",
+    "prettier": "^1.13.5",
+    "react-native-typescript-transformer": "^1.2.10",
+    "tslint": "^5.10.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^2.9.2"
+  }
+}
