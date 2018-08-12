@@ -10,7 +10,7 @@ export default class App extends React.Component {
       <DraggaleView
         style={styles.container}
         backgroundComponent={<View style={styles.view} />}
-        // direction="down"
+        direction="down"
         offset={70}
         threshold={300}
       />
