@@ -198,7 +198,6 @@ class AVADraggableView extends React.Component<P, S> {
 
 const styles = StyleSheet.create({
   fill: {
-    flex: 1,
     shadowColor: '#303030',
     shadowOffset: { width: 0, height: 6 },
     shadowOpacity: 0.6,
