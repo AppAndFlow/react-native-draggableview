@@ -64,6 +64,8 @@ Use `ref` to access these methods.
 | ---------- | ------------- | --------------- |
 
 
+|
+
 | `moveToNormal` | `void | Moves DraggableView to it's default position | |`moveToBottom`|`void | Moves DraggableView to it's bottom position |
 | `moveToTop` | `void | Moves DraggableView to it's top position |
 
