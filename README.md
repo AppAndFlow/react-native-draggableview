@@ -4,7 +4,7 @@
 
 Installation can be done through `npm` or `yarn`:
 
-- This lib uses [react-native-gesture-handler](https://github.com/kmagiera/react-native-gesture-handler). If you are using Expo it is included by default, otherwise you will need to install it.
+- This lib uses [react-native-gesture-handler](https://github.com/kmagiera/react-native-gesture-handler). If you are using [Expo](https://expo.io/) it is included by default, otherwise you will need to install it.
 
 ```shell
 npm i react-native-draggableView --save
