@@ -1,5 +1,7 @@
 # react-native-draggableview
 
+[![npm (scoped)](https://img.shields.io/npm/v/draggableview.svg)](https://www.npmjs.com/package/draggableview) 
+
 ![Alt Text](https://cdn.discordapp.com/attachments/172177937594843136/478293517924433920/ex2.gif)
 
 ![Alt Text](https://cdn.discordapp.com/attachments/172177937594843136/478293504930611200/ex1.gif)
