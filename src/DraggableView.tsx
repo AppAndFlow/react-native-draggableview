@@ -24,7 +24,7 @@ interface S {
   isDragged: boolean;
 }
 
-class AVADraggableView extends React.Component<P, S> {
+export default class extends React.Component<P, S> {
   _translateY: any;
   _translateYY: any;
   _lastOffset: any;
@@ -211,5 +211,3 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
   },
 });
-
-export default AVADraggableView;

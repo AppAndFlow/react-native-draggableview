@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { registerRootComponent } from 'expo';
-import { StyleSheet, View, Dimensions, Text } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 
 import DraggaleView from './DraggableView';
 
@@ -11,6 +11,7 @@ export default class App extends React.Component {
         style={styles.container}
         backgroundComponent={<View style={styles.view} />}
         offset={40}
+        direction="down"
         threshold={300}
       >
         <View style={styles.innerView}>
