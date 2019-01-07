@@ -17,7 +17,7 @@ interface P {
   style?: ViewStyle;
   direction?: 'up' | 'down';
   threshold?: number;
-  offset?: number;
+  offset: number;
   onMove?: (isDragged: boolean) => void;
 }
 
@@ -26,6 +26,9 @@ interface S {
 }
 
 export default class extends React.Component<P, S> {
+  static defaultProps = {
+    offset: 0,
+  };
   _translateY: any;
   _translateYY: any;
   _lastOffset: any;

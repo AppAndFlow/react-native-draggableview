@@ -1,6 +1,6 @@
 {
   "name": "draggableview",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A draggable view for React Native",
   "author": "Vincent de Lafontaine",
   "private": false,
@@ -9,7 +9,7 @@
     "prettier": "prettier --write './src/**/*'",
     "tsc": "tsc"
   },
-  "main": "compiled/src/DraggableView.js",
+  "main": "dist/src/DraggableView.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/AppAndFlow/react-native-draggableview"
@@ -24,7 +24,7 @@
   ],
   "license": "MIT",
   "files": [
-    "compiled/src"
+    "dist/src"
   ],
   "peerDependencies": {
     "react": "*",

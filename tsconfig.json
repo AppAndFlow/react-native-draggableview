@@ -1,17 +1,15 @@
 {
   "compilerOptions": {
+    "declaration": true,
     "esModuleInterop": true,
+    "experimentalDecorators": true,
     "jsx": "react",
-    "lib": ["esnext", "dom"],
+    "lib": ["dom", "es2015", "es2016"],
     "module": "es2015",
     "moduleResolution": "node",
+    "outDir": "dist",
+    "skipLibCheck": true,
     "strict": true,
-    "strictNullChecks": false,
-    "target": "es5",
-    "types": ["node"],
-    "outDir": "compiled",
-    "experimentalDecorators": true,
-    "downlevelIteration": true,
-    "skipLibCheck": true
+    "target": "es5"
   }
 }
