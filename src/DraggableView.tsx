@@ -18,6 +18,7 @@ interface P {
   direction?: 'up' | 'down';
   threshold?: number;
   offset?: number;
+  onMove?: (isDragged: boolean) => void;
 }
 
 interface S {
@@ -100,6 +101,12 @@ export default class extends React.Component<P, S> {
     }
   };
 
+  _onMove = () => {
+    if (this.props.onMove) {
+      this.props.onMove(this.state.isDragged);
+    }
+  };
+
   moveToTop = () => {
     const offset = this.props.offset || 0;
 
@@ -111,7 +118,7 @@ export default class extends React.Component<P, S> {
     this._translateY.setOffset(0);
     this._translateY.setValue(0);
     this._lastOffset.y = Dimensions.get('window').height;
-    this.setState({ isDragged: true });
+    this.setState({ isDragged: true }, this._onMove);
   };
 
   moveToBottom = () => {
@@ -125,7 +132,7 @@ export default class extends React.Component<P, S> {
     this._translateY.setOffset(this._lastOffset.y);
     this._translateY.setValue(0);
     this._lastOffset.y = Dimensions.get('window').height;
-    this.setState({ isDragged: true });
+    this.setState({ isDragged: true }, this._onMove);
   };
 
   moveToNormal = () => {
@@ -137,7 +144,7 @@ export default class extends React.Component<P, S> {
     this._translateY.setOffset(0);
     this._translateY.setValue(0);
     this._lastOffset.y = 0;
-    this.setState({ isDragged: false });
+    this.setState({ isDragged: false }, this._onMove);
   };
 
   render() {
